@@ -1,0 +1,38 @@
+.title {
+    font-weight: bold;
+}
+
+section {
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+}
+
+.center {
+    text-align: center;
+    min-width: 200px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+header {
+    background-color: rgb(255, 176, 176);
+    color: white;
+    padding: 3rem 2rem;
+    border-left: none;
+    border-right: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 3em;
+}
