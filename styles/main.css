@@ -14,6 +14,10 @@ section {
     margin: 0 auto;
 }
 
+.headerDiv{
+    height: 113px;
+}
+
 body {
     margin: 0;
     background-color: #1d1d1d;
@@ -30,4 +34,10 @@ footer {
 li, h2, p{
     color: white;
     font-family: 'PT Sans', sans-serif;
+}
+
+iframe {
+    border: none;
+    overflow: hidden;
+    width:  100% ;
 }
