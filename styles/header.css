@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik+Lines&family=Rubik+Maps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik+Lines&family=Rubik+Maps&display=swap');
+
 header {
     background-color: rgb(46, 46, 46);
     color: white;
@@ -7,5 +10,5 @@ header {
 }
 
 .title {
-    font-weight: bold;
+    font-family: 'Rubik Lines', sans-serif;
 }

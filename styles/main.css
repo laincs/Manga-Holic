@@ -4,6 +4,7 @@ section {
     display: grid;
     place-items: center;
     gap: 20px;
+    margin-top: 40px;
 }
 
 .center {
@@ -28,4 +29,5 @@ footer {
 
 li, h2, p{
     color: white;
+    font-family: 'PT Sans', sans-serif;
 }
