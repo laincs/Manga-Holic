@@ -3,35 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MANGA⸸HOLIC</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css" >
+    <link rel="stylesheet" href="styles/carousel.css" >
+    <link rel="stylesheet" href="styles/header.css" >
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1 id="title" class="title center">ONG - AYUDA A UN PELUDO</h1>
+        <h1 id="title" class="title">MANGA ⸸ HOLIC</h1>
     </header>
 
-    <section>
-        
-        <p class="center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-        <h2 class="center">Nuestros integrantes</h2>
-        <ul>
-            <li class="container">Persona 1 - cargo 1</li>
-            <li class="container">Persona 2 - cargo 2</li>
-            <li class="container">Persona 3 - cargo 3</li>
-            <li class="container">Persona n - cargo n</li>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
         </ul>
-        <h2 class="center">Nuetras secciones de ayuda</h2>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="src/images/gantz_art.jpg" alt="Los Angeles" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3>Gantz</h3>
+              <p>Entire manga avalible online</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="src/images/vagabond_art.jpg" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3>Vagabond</h3>
+              <p>Ready chapter no 327!</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="src/images/berserk_art.jpg" alt="New York" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3>Berserk</h3>
+              <p>Read the last 367 manga!</p>
+            </div>   
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
 
+    <section>
+        <h2 class="center">Last Mangas Uploaded</h2>
+        <ul>
+            <li> <a href="#" class="text-white">Kentaro Miura: Berserk 367 </a></li>
+            <li><a href="#" class="text-white">Takehiko Inoue: Vagabond 327</a></li>
+            <li><a href="#" class="text-white">Hiroya Oku: Gantz 383</a></li>
+        </ul>
     </section>
-    <footer>
-        <a href="#title">Ir al Inicio</a>
-        <p>Copyrigth 2024</p>
+    <footer >
+        <div class="row">
+            <a href="#title" class="col text-left text-white">Ir al Inicio</a>
+            <p class="col text-right" >Copyrigth 2024</p>
+        </div>
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
 </body>
 </html>

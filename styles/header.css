@@ -1,0 +1,11 @@
+header {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    padding: 1rem 2rem;
+    border-left: none;
+    border-right: none;
+}
+
+.title {
+    font-weight: bold;
+}
