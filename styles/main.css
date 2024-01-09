@@ -53,3 +53,9 @@ iframe {
     overflow: hidden;
     width:  100% ;
 }
+
+.manga-week {
+    height: 300px;
+    width: auto; 
+    display: block; 
+  }
