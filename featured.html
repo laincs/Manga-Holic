@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de - MANGA⸸HOLIC</title>
+    <title>Destacados - MANGA⸸HOLIC</title>
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/main.css" >
-    <link rel="stylesheet" href="styles/about.css" >
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/featured.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
@@ -16,74 +17,110 @@
         <iframe src="header.html"></iframe>
     </div>
 
-    <main>
-        <div class="manga">
-            <img src="src/images/featured/1_berserk.jpg" alt="Berserk" class="manga-cover">
-            <h3>Berserk</h3>
-            <p>Guts, un guerrero con una espada gigante, lucha contra criaturas demoníacas en un mundo oscuro y brutal. Una historia épica de fantasía oscura.</p>
-          </div>
-        
-          <div class="manga">
-            <img src="src/images/featured/2_Vagabond.jpg" alt="Vagabond" class="manga-cover">
-            <h3>Vagabond</h3>
-            <p>Basado en la vida del espadachín Miyamoto Musashi, "Vagabond" es una obra maestra que explora la filosofía de la espada y el camino del samurái.</p>
-          </div>
-        
-          <div class="manga">
-            <img src="src/images/featured/3_monster.jpg" alt="Monster" class="manga-cover">
-            <h3>Monster</h3>
-            <p>El cirujano Dr. Kenzou Tenma se ve envuelto en una conspiración después de salvar la vida de un niño. Un thriller psicológico lleno de suspense.</p>
-          </div>
-        
-          <div class="manga">
-            <img src="src/images/featured/4_vinland_saga.jpg" alt="Vinland Saga" class="manga-cover">
-            <h3>Vinland Saga</h3>
-            <p>Siguiendo la historia de Thorfinn, un joven vikingo en busca de venganza. "Vinland Saga" combina acción intensa y narrativa histórica.</p>
-          </div>
-        
-          <div class="manga">
-            <img src="src/images/featured/5_Kingdom.jpg" alt="Kingdom" class="manga-cover">
-            <h3>Kingdom</h3>
-            <p>En los Estados Combatientes de la antigua China, Xin y Piao buscan convertirse en grandes generales.</p>
-          </div>
-        
-          <div class="manga">
-            <img src="src/images/featured/6_20thCenturyBoys.jpg" alt="20th Century Boys" class="manga-cover">
-            <h3>20th Century Boys</h3>
-            <p>Una historia de misterio y conspiración que sigue a un grupo de amigos que intentan prevenir un apocalipsis planeado por un enigmático líder. Llena de giros inesperados.</p>
-          </div>
-        
-          <div class="manga">
-            <img src="src/images/featured/7_GoldenKamuy.jpg" alt="Golden Kamuy" class="manga-cover">
-            <h3>Golden Kamuy</h3>
-            <p>Después de la Guerra Ruso-Japonesa, un exsoldado busca un tesoro escondido en Hokkaido, enfrentándose a otros cazadores y a la comunidad indígena Ainu. Acción y exploración en un entorno único.</p>
-          </div>
-        
-          <div class="manga">
-            <img src="src/images/featured/8_Parasyte.jpg" alt="Parasyte" class="manga-cover">
-            <h3>Parasyte</h3>
-            <p>En un mundo invadido por parásitos alienígenas, un estudiante llamado Shinichi Izumi lucha por sobrevivir después de que un parásito falla en poseer completamente su cuerpo.</p>
-          </div>
-        
-          <div class="manga">
-            <img src="src/images/featured/9_punpun.jpg" alt="Oyasumi Punpun" class="manga-cover">
-            <h3>Oyasumi Punpun</h3>
-            <p>"Oyasumi Punpun" sigue la vida de Punpun Punyama, un niño con una representación pájaro que enfrenta los desafíos de la vida, el amor y la pérdida mientras crece.</p>
-          </div>
-        
-          <div class="manga">
-            <img src="src/images/featured/10_Gantz.jpg" alt="Gantz" class="manga-cover">
-            <h3>Gantz</h3>
-            <p>Kei Kurono y sus compañeros resucitan después de morir, obligados a participar en misiones mortales para Gantz. Luchan contra alienígenas en una narrativa intensa que explora la supervivencia y los dilemas morales.</p>
-          </div>
-    </main>
-    <footer >
+    <br>
+    <main class="container">
         <div class="row">
-            <a href="#title" class="col text-left text-white">Ir al Inicio</a>
-            <p class="col text-right" >Copyrigth 2024</p>
+            <div class="col-md-6 mb-4">
+                <div class="manga center">
+                    <img src="src/images/featured/1_berserk.jpg" alt="Berserk" class="manga-cover center">
+                    <h3>Berserk ベルセルク</h3>
+                    <p>Guts, un guerrero con una espada gigante, lucha contra criaturas demoníacas en un mundo oscuro y brutal. Una historia épica de fantasía oscura.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="manga center">
+                    <img src="src/images/featured/2_Vagabond.jpg" alt="Vagabond" class="manga-cover center">
+                    <h3>Vagabond バガボンド</h3>
+                    <p>Basado en la vida del espadachín Miyamoto Musashi, "Vagabond" es una obra maestra que explora la filosofía de la espada y el camino del samurái.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="manga center">
+                    <img src="src/images/featured/3_monster.jpg" alt="Monster" class="manga-cover center">
+                    <h3>Monster モンスター</h3>
+                    <p>El cirujano Dr. Kenzou Tenma se ve envuelto en una conspiración después de salvar la vida de un niño. Un thriller psicológico lleno de suspense.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="manga center">
+                    <img src="src/images/featured/4_vinland_saga.jpg" alt="Vinland Saga" class="manga-cover center">
+                    <h3>Vinland Saga ヴィンランド・サガ</h3>
+                    <p>Siguiendo la historia de Thorfinn, un joven vikingo en busca de venganza. "Vinland Saga" combina acción intensa y narrativa histórica.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="manga center">
+                    <img src="src/images/featured/5_Kingdom.jpg" alt="Kingdom" class="manga-cover center">
+                    <h3>Kingdom キングダム</h3>
+                    <p>En los Estados Combatientes de la antigua China, Xin y Piao buscan convertirse en grandes generales.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="manga center">
+                    <img src="src/images/featured/6_20thCenturyBoys.jpg" alt="20th Century Boys" class="manga-cover center">
+                    <h3>20th Century Boys 20世紀少年</h3>
+                    <p>Una historia de misterio y conspiración que sigue a un grupo de amigos que intentan prevenir un apocalipsis planeado por un enigmático líder. Llena de giros inesperados.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="manga center">
+                    <img src="src/images/featured/7_GoldenKamuy.jpg" alt="Golden Kamuy" class="manga-cover center">
+                    <h3>Golden Kamuy ゴールデンカムイ</h3>
+                    <p>Después de la Guerra Ruso-Japonesa, un exsoldado busca un tesoro escondido en Hokkaido, enfrentándose a otros cazadores y a la comunidad indígena Ainu. Acción y exploración en un entorno único.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="manga center">
+                    <img src="src/images/featured/8_Parasyte.jpg" alt="Parasyte" class="manga-cover center">
+                    <h3>Parasyte 寄生獣</h3>
+                    <p>En un mundo invadido por parásitos alienígenas, un estudiante llamado Shinichi Izumi lucha por sobrevivir después de que un parásito falla en poseer completamente su cuerpo.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="manga center">
+                    <img src="src/images/featured/9_punpun.jpg" alt="Oyasumi Punpun" class="manga-cover center">
+                    <h3>Oyasumi Punpun おやすみ プンプン</h3>
+                    <p>"Oyasumi Punpun" sigue la vida de Punpun Punyama, un niño con una representación pájaro que enfrenta los desafíos de la vida, el amor y la pérdida mientras crece.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="manga center">
+                    <img src="src/images/featured/10_Gantz.jpg" alt="Gantz" class="manga-cover center">
+                    <h3>Gantz ガンツ</h3>
+                    <p>Kei Kurono y sus compañeros resucitan después de morir, obligados a participar en misiones mortales para Gantz. Luchan contra alienígenas en una narrativa intensa que explora la supervivencia y los dilemas morales.</p>
+                </div>
+            </div>
         </div>
-    </footer>
+    </main>
 
-
+    <footer>
+        <div class="row justify-content-end">
+          <a href="#title" class="col text-left text-white">Ir al Inicio</a>
+    
+          <!-- Imagen para Instagram -->
+          
+    
+          <p class="col text-right" style="margin-left: auto;">
+            <a href="https://www.instagram.com/" target="_blank" class="col text-center">
+              <img src="src/images/social/rrss_ig.webp" alt="Instagram" width="20" height="20">
+            </a>
+      
+            <!-- Imagen para Facebook -->
+            <a href="https://www.facebook.com/" target="_blank" class="col text-center">
+                <img src="src/images/social/rrss_fb.png" alt="Facebook" width="30" height="30">
+            </a>
+            Copyrigth 2024
+          </p>
+        </div>
+      </footer>
 </body>
 </html>
