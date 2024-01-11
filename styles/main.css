@@ -43,7 +43,7 @@ footer {
     padding: 1em;
 }
 
-li, h2, p{
+li, h2, p, .error-message{
     color: white;
     font-family: 'PT Sans', sans-serif;
 }
@@ -52,6 +52,7 @@ iframe {
     border: none;
     overflow: hidden;
     width:  100% ;
+    z-index: 10; 
 }
 
 .manga-week {
@@ -59,3 +60,7 @@ iframe {
     width: auto; 
     display: block; 
   }
+
+.ix{
+    z-index: 1; 
+}
