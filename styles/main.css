@@ -59,8 +59,13 @@ iframe {
     height: 300px;
     width: auto; 
     display: block; 
+    object-fit: cover;
   }
 
 .ix{
     z-index: 1; 
+}
+
+.manga-info{
+    max-width: 80%;
 }

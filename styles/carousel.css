@@ -10,3 +10,7 @@ h3, p{
     z-index: 1; 
     position: relative;
 }
+
+.center{
+    text-align: justify;
+}
