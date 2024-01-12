@@ -40,6 +40,6 @@ iframe {
     background: transparent;
     top: 0;
     left: 0;
-    position: sticky;
-    z-index: 2; 
+    position: fixed;
+    z-index: 50; 
 }

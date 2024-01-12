@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - MANGA⸸HOLIC</title>
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/about.css" >
+    <link rel="stylesheet" href="styles/header.css" >
+    <link rel="stylesheet" href="styles/main.css" >
+    <link rel="stylesheet" href="styles/login.css" >
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+    <style>
+        :root { --height: 85px; }
+        iframe { height: var(--height); }
+    </style>
+    <script>
+        window.addEventListener("message", function(event) {
+            document.documentElement.style.setProperty('--height', event.data === "burger-menu-active" ? '85px' : '300px');
+        });
+
+        function checkForm() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var middleName = document.getElementById("middleName").value;
+            var gender = document.getElementById("gender").value;
+            var rut = document.getElementById("rut").value;
+            var address = document.getElementById("address").value;
+            var email = document.getElementById("email").value;
+            var phoneNumber = document.getElementById("phoneNumber").value;
+
+            // Validaciones de campos
+            if (firstName === "") {
+                showErrorMsj("firstName", "Ingrese sus nombres");
+                return false;
+            } else {
+                hideErrorMsj("firstName");
+            }
+
+            if (lastName === "") {
+                showErrorMsj("lastName", "Ingrese su apellido paterno");
+                return false;
+            } else {
+                hideErrorMsj("lastName");
+            }
+
+            if (middleName === "") {
+                showErrorMsj("middleName", "Ingrese su apellido materno");
+                return false;
+            } else {
+                hideErrorMsj("middleName");
+            }
+
+            if (gender === "") {
+                showErrorMsj("gender", "Seleccione su género");
+                return false;
+            } else {
+                hideErrorMsj("gender");
+            }
+
+            if (rut === "") {
+                showErrorMsj("rut", "Ingrese su Rut");
+                return false;
+            } else {
+                hideErrorMsj("rut");
+            }
+
+            if (address === "") {
+                showErrorMsj("address", "Ingrese su dirección");
+                return false;
+            } else {
+                hideErrorMsj("address");
+            }
+
+            if (email === "") {
+                showErrorMsj("email", "Ingrese su correo electrónico");
+                return false;
+            } else {
+                hideErrorMsj("email");
+            }
+
+            if (phoneNumber === "") {
+                showErrorMsj("phoneNumber", "Ingrese su número de teléfono");
+                return false;
+            } else {
+                hideErrorMsj("phoneNumber");
+            }
+
+            return true;
+        }
+
+        function showErrorMsj(campo, mensaje) {
+            document.getElementById(campo + "-error").innerText = mensaje;
+        }
+
+        function hideErrorMsj(campo) {
+            document.getElementById(campo + "-error").innerText = "";
+        }
+    </script>
+</head>
+<body>
+    <div class="headerDiv" id="head">
+        <iframe src="header.html" class=""></iframe>
+    </div>
+
+    <main>
+        <section id="register" class="center ix">
+            <div class="container mt-5 ix">
+                <h2 class="text-center mb-4">⸸ Contactanos ⸸</h2>
+
+                <form onsubmit="return checkForm()">
+                    <div class="form-group ix">
+                        <input type="text" class="form-control" id="firstName" placeholder="Nombres">
+                        <div class="error-message" id="firstName-error"></div>
+                    </div>
+
+                    <div class="form-group ix">
+                        <input type="text" class="form-control" id="lastName" placeholder="Apellido Paterno">
+                        <div class="error-message" id="lastName-error"></div>
+                    </div>
+
+                    <div class="form-group ix">
+                        <input type="text" class="form-control" id="middleName" placeholder="Apellido Materno">
+                        <div class="error-message" id="middleName-error"></div>
+                    </div>
+
+                    <div class="form-group ix">
+                        <select class="form-control" id="gender">
+                            <option value="">Seleccione Genero</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Otro">Otro</option>
+                            <option value="Prefiero No Mencionar">Prefiero No Mencionar</option>
+                        </select>
+                        <div class="error-message" id="gender-error"></div>
+                    </div>
+
+                    <div class="form-group ix">
+                        <input type="text" class="form-control" id="rut" placeholder="Rut">
+                        <div class="error-message" id="rut-error"></div>
+                    </div>
+
+                    <div class="form-group ix">
+                        <input type="text" class="form-control" id="address" placeholder="Dirección">
+                        <div class="error-message" id="address-error"></div>
+                    </div>
+
+                    <div class="form-group ix">
+                        <input type="email" class="form-control" id="email" placeholder="Correo Electrónico">
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+
+                    <div class="form-group ix">
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Número de Teléfono">
+                        <div class="error-message" id="phoneNumber-error"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-danger rounded btn-lg button-cstm">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="row justify-content-end">
+            <a href="#head" class="col text-left text-white">Ir al Inicio</a>
+            <!-- Imagen para Instagram -->
+
+            <p class="col text-right" style="margin-left: auto;">
+                <a href="https://www.instagram.com/" target="_blank" class="col text-center">
+                    <img src="src/images/social/rrss_ig.webp" alt="Instagram" width="20" height="20">
+                </a>
+
+                <!-- Imagen para Facebook -->
+                <a href="https://www.facebook.com/" target="_blank" class="col text-center">
+                    <img src="src/images/social/rrss_fb.png" alt="Facebook" width="30" height="30">
+                </a>
+                Copyright 2024
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
