@@ -1,6 +1,9 @@
 p, h2{
-    text-align: justify;
     max-width: 80%;
+}
+
+p{
+    text-align: justify;
 }
 
 li{

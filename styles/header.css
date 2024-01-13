@@ -14,8 +14,9 @@ header {
     color: white;
 }
 
-a {
+ul.navbar-nav a {
     text-decoration:none;
+    font-size: 22px !important;
 }
 
 a:hover {
