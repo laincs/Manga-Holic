@@ -15,8 +15,9 @@ function showHTML(data){
         const row = document.createElement('tr')
         row.innerHTML = `
         <td>${element.name}</td>
-        <td>${element.email}</td>
+        <td>${element.website}</td>
         <td>${element.phone}</td>
+        <td>Mangas ${element.company.name}</td>
         `
         answer.appendChild(row);
     });
