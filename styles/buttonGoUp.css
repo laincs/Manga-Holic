@@ -4,8 +4,10 @@
     bottom: 20px;
     right: 20px;
     font-size: 20px;
+    z-index: 100; 
 }
 
-h2{
+.button-cstm h2{
     margin: 2px;
+    font-family: 'PT Sans', sans-serif;
 }

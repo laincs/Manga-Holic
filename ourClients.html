@@ -15,6 +15,10 @@
     <script src="js/iframeCommunication.js"></script>
     <script src="js/iframeResponsiveListener.js" defer></script>
     <script src="js/apiHandler.js" defer></script>
+
+    <script src="js/buttonGoUp.js" defer></script>
+    <link rel="stylesheet" href="styles/buttonGoUp.css" >
+
     <style>
         :root { --height: 85px; }
         iframe { height: var(--height); }
@@ -51,6 +55,7 @@
             </div>
         </section>
     </main>
+    <button id="scrollToTopButton" onclick="scrollToTop()" class="btn btn-danger rounded-circle btn-lg"><h2>↑</h2></button>
     <footer>
         <div class="row justify-content-end">
           <a href="#head" class="col text-left text-white">Ir al Inicio</a>
